@@ -56,4 +56,10 @@
         <property name="exceptionLogger" ref="exceptionLogger" />
     </bean>
 
+    <bean id="multipartSecurityFilter" class="com.example.upload.app.common.MultipartSecurityFilter">
+        <property name="maxFileNum" value="2"/>
+        <property name="maxTextParamNum" value="5"/>
+        <property name="maxTextSize" value="50"/>
+    </bean>
+
 </beans>
